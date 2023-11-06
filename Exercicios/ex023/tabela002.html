@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 500px;
+        position: relative;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+        border: 1px solid black;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+        
+    }
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+
+    .num{
+        text-align: right;
+    }
+
+    tbody > tr:nth-child(odd){/*Par*/
+        background-color: rgb(255, 255, 255);
+
+    }
+    tbody > tr:nth-child(even){/*ímpar*/
+        background-color: lightgray;
+
+    }
+
+    caption{
+        padding: 5.5px;
+        background-color: lightgray;
+    }
+    
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        
+        Table
+            Caption
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">Populaçã</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janero</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janero</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, libero doloribus. Quaerat atque voluptatibus, quisquam eius optio aut ipsam dicta quasi assumenda excepturi tempora perspiciatis, iure, quidem doloremque placeat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, commodi perspiciatis enim cupiditate alias beatae porro aut, omnis ex dignissimos quod inventore laudantium esse tenetur velit, nihil voluptatibus nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis voluptate libero quas molestiae, repellendus aperiam eius amet dolor pariatur beatae esse iure vel quidem fugit veniam deserunt quasi impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur magnam perferendis excepturi, et accusamus incidunt iusto dolor eius, ipsum nulla minus ipsam nihil voluptas non cupiditate quaerat hic nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus culpa aspernatur dolorum totam reprehenderit natus magni quae dolore, veniam suscipit voluptatum. Nemo ut quo nobis vero inventore temporibus voluptas labore!</p>
+    
+</body>
+</html>

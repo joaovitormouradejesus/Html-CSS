@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            font-weight: bolder;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Pâmela Barbosa dos santos</td>
+                <td>terror em amityville</td>
+                <td>Invocação do mal</td>
+                <td>Além do paraiso</td>
+            </tr>
+            <tr>
+                <td>Ana Beatriz</td>
+                <td>Invocação do mal 2</td>
+                <td>Titanic</td>
+                <td>Rei leão</td>
+            </tr>
+            <tr>
+                <td>Léticia</td>
+                <td>Pousando no amor</td>
+                <td>Corra</td>
+                <td>Guardiões da Galáxia</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>João Vitor</td>
+                <td>Homem Aranha sem volta para casa</td>
+                <td>Coringa</td>
+                <td>Invocação do mal</td>
+            </tr>
+            <tr>
+                <td>Pedro Henrique</td>
+                <td>Vingadores Ultimato</td>
+                <td>Homem aranha no Aranha verso</td>
+                <td>Five Nights at freddy's</td>
+            </tr>
+            <tr>
+                <td>Ederson</td>
+                <td>Velozes e furiosos 7</td>
+                <td>Gente Grande 2</td>
+                <td>Gran Turismo</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
