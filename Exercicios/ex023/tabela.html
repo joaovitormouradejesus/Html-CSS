@@ -19,21 +19,22 @@
         margin: auto;
         border-collapse: collapse;
         width: 400px;
+        height: 400px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.262);
+        
+        
     }
     td{
-        padding: 10px;
         border: 1px solid black;
+        padding: 8px;
+        text-align: center; /*Alinhamento horizontal*/
+        vertical-align: middle;  /*Alianhamento vertical*/
     }
-    td.destaque{
-        background-color: yellow;
+
+    .numero{
+        text-align: right;
     }
-    tr.linha{
-        background-color: gray;
-    }
-    tr.linha2{
-        background-color: red;
-    }
+   
 </style>
 <body>
     <h1>Minha primeira Tabela</h1>
@@ -48,32 +49,26 @@
 
     <table> <!--Tabela-->
         <tr> <!--Primeira Linha-->
-            <td class="destaque">A1</td> <!--Conteudo-->
+            <td>A1</td> <!--Conteudo-->
             <td>B1</td>
             <td>C1</td>
         </tr>
         <tr> <!--Segunda Linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>B3</td>
+            <td class="numero">c3</td>
         </tr>
-        <tr class="linha"> <!-- Terceira Linha-->
+        <tr> <!-- Terceira Linha-->
             <td>A3</td>
-            <td class="destaque">B3</td>
-            <td>C3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr> <!--Quarta Linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
         </tr>
-        <tr> <!--Sexta Linha-->
-            <td>A5</td>
-        </tr>
-        <tr class="linha2">
-            <td>A6</td>
-            <td>A6</td>
-        </tr>
+
     </table>
     
 </body>
